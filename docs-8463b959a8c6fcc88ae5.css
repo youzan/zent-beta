@@ -3600,7 +3600,11 @@ ol {
     -ms-flex-direction: column;
         flex-direction: column;
     border-left: 1px solid #dcdee0;
-    margin-left: -1px; }
+    margin-left: -1px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     .zent-number-input-arrows .zent-number-input-arrow {
       cursor: pointer;
       width: 20px;
@@ -3608,11 +3612,16 @@ ol {
       line-height: 15px;
       background-color: white;
       text-align: center; }
-      .zent-number-input-arrows .zent-number-input-arrow-disable {
+      .zent-number-input-arrows .zent-number-input-arrow.zent-number-input-arrow-disable {
         cursor: not-allowed;
-        pointer-events: none;
         color: #c8c9cc;
         background: #f7f8fa; }
+        .zent-number-input-arrows .zent-number-input-arrow.zent-number-input-arrow-disable > .zenticon {
+          color: #c8c9cc; }
+        .zent-number-input-arrows .zent-number-input-arrow.zent-number-input-arrow-disable:hover {
+          color: #c8c9cc; }
+          .zent-number-input-arrows .zent-number-input-arrow.zent-number-input-arrow-disable:hover > .zenticon {
+            color: #c8c9cc; }
       .zent-number-input-arrows .zent-number-input-arrow:hover > .zenticon {
         color: #155bd4; }
       .zent-number-input-arrows .zent-number-input-arrow > .zenticon {
@@ -3631,12 +3640,21 @@ ol {
     background: #fff;
     cursor: pointer;
     text-align: center;
-    color: #7d7e80; }
-    .zent-number-input-count-disable {
+    color: #7d7e80;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .zent-number-input-count.zent-number-input-count-disable {
       cursor: not-allowed;
-      pointer-events: none;
       color: #c8c9cc;
       background: #f7f8fa; }
+      .zent-number-input-count.zent-number-input-count-disable > .zenticon {
+        color: #c8c9cc; }
+      .zent-number-input-count.zent-number-input-count-disable:hover {
+        color: #c8c9cc; }
+        .zent-number-input-count.zent-number-input-count-disable:hover > .zenticon {
+          color: #c8c9cc; }
     .zent-number-input-count:hover {
       color: #155bd4; }
 
