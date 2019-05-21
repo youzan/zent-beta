@@ -2478,8 +2478,7 @@ ol {
   font-size: 14px;
   line-height: 20px;
   color: #7d7e80;
-  padding: 16px;
-  min-height: 132px; }
+  padding: 16px; }
   .zent-dialog-r-body.with-success-icon, .zent-dialog-r-body.with-warning-icon {
     padding-left: 30px; }
   .zent-dialog-r-body:last-child {
@@ -2668,6 +2667,8 @@ ol {
     text-align: left; }
   .zent-grid-text-align-right {
     text-align: right; }
+    .zent-grid-text-align-right .zent-grid-thead-sort {
+      margin-right: 16px; }
   .zent-grid-text-align-center {
     text-align: center; }
   .zent-grid-nowrap {
@@ -3675,12 +3676,12 @@ ol {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
-  .zent-pagination-page-number-button, .zent-pagination-arrow-button {
+  .zent-pagination-page-number-button.zent-btn, .zent-pagination-arrow-button.zent-btn {
     padding: 0 8px;
     min-width: 32px;
     position: relative;
     transition: none; }
-    .zent-pagination-page-number-button[disabled] .zent-pagination-arrow, .zent-pagination-arrow-button[disabled] .zent-pagination-arrow {
+    .zent-pagination-page-number-button.zent-btn[disabled] .zent-pagination-arrow, .zent-pagination-arrow-button.zent-btn[disabled] .zent-pagination-arrow {
       stroke: #c8c9cc; }
   .zent-pagination-page-button--no-border:not(.zent-btn-primary) {
     border-color: transparent; }
@@ -3784,8 +3785,6 @@ ol {
   box-shadow: 0 2px 8px 0 rgba(200, 201, 204, 0.5);
   background-color: #fff;
   z-index: 2000; }
-  .zent-pop .zent-popover-content {
-    min-width: 200px; }
   .zent-pop .zent-pop-inner,
   .zent-pop .zent-pop-header {
     position: relative;
@@ -5229,7 +5228,7 @@ ol {
   .zent-table .thead .tr {
     border-top: 0;
     border-bottom: 1px solid #ebedf0;
-    background: #f2f3f5; }
+    background: #f7f8fa; }
     .zent-table .thead .tr .cell {
       font-size: 14px;
       font-weight: 500; }
@@ -5273,7 +5272,7 @@ ol {
   .zent-table .thead .sort-col--active .sort-col-icon {
     visibility: visible; }
   .zent-table .tbody .tr:hover {
-    background: #f7f8fa; }
+    background: #edf4ff; }
     .zent-table .tbody .tr:hover .empty-data {
       background: transparent; }
   .zent-table .tbody .tr--expanded {
