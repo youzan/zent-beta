@@ -1254,7 +1254,7 @@ ol {
             appearance: none; }
 
 .zent-btn + .zent-btn {
-  margin-left: 10px; }
+  margin-left: 8px; }
 
 .zent-btn-large {
   padding: 0 24px;
@@ -1617,7 +1617,7 @@ ol {
       height: 30px;
       line-height: 30px;
       text-align: left;
-      color: #7d7e80;
+      color: #646566;
       padding-left: 10px;
       padding-right: 30px;
       box-sizing: border-box; }
@@ -1992,7 +1992,7 @@ ol {
   position: relative; }
   .zent-datetime-picker .picker-seperator {
     font-size: 14px;
-    color: #7d7e80;
+    color: #646566;
     padding: 0 10px; }
   .zent-datetime-picker .picker-input {
     color: #969799;
@@ -2477,7 +2477,7 @@ ol {
 .zent-dialog-r-body {
   font-size: 14px;
   line-height: 20px;
-  color: #7d7e80;
+  color: #323233;
   padding: 16px; }
   .zent-dialog-r-body.with-success-icon, .zent-dialog-r-body.with-warning-icon {
     padding-left: 30px; }
@@ -2881,7 +2881,7 @@ ol {
   min-width: 80px;
   height: 100%;
   box-sizing: border-box;
-  padding: 0 16px;
+  padding: 0 12px;
   margin: 0;
   color: #323233;
   font-size: 14px;
@@ -2909,7 +2909,7 @@ ol {
   vertical-align: middle;
   background-color: #f7f8fa;
   font-size: 14px;
-  color: #7d7e80; }
+  color: #646566; }
 
 .zent-input-addon-before {
   border-right: 1px solid #dcdee0; }
@@ -3629,7 +3629,7 @@ ol {
       .zent-number-input-arrows .zent-number-input-arrow > .zenticon {
         line-height: 15px;
         position: static;
-        color: #7d7e80; }
+        color: #646566; }
     .zent-number-input-arrows .zent-number-input-arrowup {
       border-bottom: 1px solid #dcdee0; }
       .zent-number-input-arrows .zent-number-input-arrowup .zenticon {
@@ -3642,7 +3642,7 @@ ol {
     background: #fff;
     cursor: pointer;
     text-align: center;
-    color: #7d7e80;
+    color: #646566;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -5306,11 +5306,9 @@ ol {
     box-sizing: border-box; }
     .zent-table .tfoot__batchcomponents {
       float: left;
-      padding: 5px;
       padding-left: 10px; }
       .zent-table .tfoot__batchcomponents--has-children {
         margin-bottom: 10px;
-        border: 1px solid #ebedf0;
         background: #fff; }
       .zent-table .tfoot__batchcomponents--fixed {
         position: fixed;
@@ -5444,7 +5442,7 @@ ol {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    color: #7d7e80;
+    color: #646566;
     border-top: 1px solid #ebedf0;
     border-right: 1px solid #ebedf0;
     background-color: #f7f8fa;
@@ -5599,12 +5597,6 @@ ol {
   .zent-tag.zent-tag-style-blue-outline {
     color: #155bd4;
     border-color: #5487df; }
-  .zent-tag.zent-tag-style-darkgreen {
-    background: #268d37;
-    border-color: #268d37; }
-  .zent-tag.zent-tag-style-darkgreen-outline {
-    color: #268d37;
-    border-color: #4cb35d; }
   .zent-tag.zent-tag-style-grey {
     color: #323233;
     border-color: #f2f3f5;
@@ -5805,7 +5797,7 @@ ol {
       display: inline-block;
       border: 5px solid transparent;
       border-left: 7px solid #ebedf0;
-      color: #7d7e80;
+      color: #646566;
       transform: rotate(90deg);
       transform-origin: 23.09% 50%;
       transition: transform 0.3s ease; }
@@ -6107,7 +6099,7 @@ ol {
   font-size: 12px;
   margin-top: 6px;
   margin-bottom: 0;
-  color: #7d7e80;
+  color: #646566;
   position: absolute; }
 
 .zent-upload-link {
