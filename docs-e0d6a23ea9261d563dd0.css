@@ -3786,8 +3786,8 @@ ol {
   height: 56px;
 }
 .zent-grid-tr:hover, .zent-grid-tr__mouseover {
-  background-color: #f7f8fa;
-  background-color: var(--theme-stroke-8, #f7f8fa);
+  background-color: #edf4ff;
+  background-color: var(--theme-primary-8, #edf4ff);
 }
 .zent-grid-tr__expanded td {
   background-color: #f7f8fa;
@@ -4383,8 +4383,10 @@ ol {
   background-color: var(--theme-stroke-8, #f7f8fa);
 }
 .zent-input-wrapper .zent-input-icon {
+  color: #969799;
+  color: var(--theme-stroke-3, #969799);
   display: block;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .zent-input-wrapper .zent-input-close {
   color: #dcdee0;
@@ -4526,6 +4528,11 @@ ol {
 .zent-textarea::placeholder {
   color: #c8c9cc;
   color: var(--theme-stroke-4, #c8c9cc);
+}
+
+.zent-input-wrapper.zent-input-wrapper-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .zent-row {
@@ -5202,143 +5209,89 @@ ol {
 .zent-notify-container {
   z-index: 10000;
   position: fixed;
-  min-width: 330px;
-  max-width: 720px;
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .zent-notify {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
+  display: -ms-flexbox;
+  display: flex;
 }
 .zent-notify-content {
-  color: #fff;
-  color: var(--theme-stroke-9, #fff);
-  padding: 0 25px;
-  line-height: 40px;
-  max-height: 200px;
-  overflow-y: auto;
+  box-shadow: 0 2px 24px 0 rgba(200, 201, 204, 0.5);
+  box-shadow: var(--shadow-spec-modal, 0 2px 24px 0 rgba(200, 201, 204, 0.5));
+  background: #fff;
+  background: var(--theme-stroke-9, #fff);
   font-size: 14px;
-  text-align: center;
-  border-radius: 2px;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto;
+  padding: 14px 16px;
+  min-width: 148px;
+  max-width: 344px;
+  border-radius: 4px;
   box-sizing: border-box;
+  font-weight: 500;
 }
 .zent-notify-content:empty:before {
   content: "\200B";
 }
 .zent-notify-content.zent-notify-content-success {
-  background: rgba(68, 187, 136, 0.8);
+  color: #2da641;
+  color: var(--theme-success-2, #2da641);
+}
+.zent-notify-content.zent-notify-content-warn {
+  color: #ed6a0c;
+  color: var(--theme-warn-1, #ed6a0c);
 }
 .zent-notify-content.zent-notify-content-error {
-  background: rgba(255, 68, 68, 0.8);
+  color: #d40000;
+  color: var(--theme-error-2, #d40000);
+}
+.zent-notify-content-icon {
+  margin-right: 16px;
 }
 
 .notify-appear {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
-.notify-appear.notify-appear-active {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: zent-notify-move-in;
-          animation-name: zent-notify-move-in;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+.notify-appear-active {
+  transform: translateY(0%);
+  opacity: 1;
+  transition-duration: 160ms;
+  transition-timing-function: opacity linear, transform ease-in;
 }
 
 .notify-exit {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  max-height: 48px;
+  opacity: 1;
 }
 .notify-exit .zent-notify-content {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  transform: translateY(0%);
 }
 
-.notify-exit.notify-exit-active {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: zent-notify-move-out;
-          animation-name: zent-notify-move-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+.notify-exit-active {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  transition-duration: 160ms;
+  transition-timing-function: opacity linear, max-height ease-out;
 }
-.notify-exit.notify-exit-active .zent-notify-content {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-name: zent-notify-content-move-out;
-          animation-name: zent-notify-content-move-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+.notify-exit-active .zent-notify-content {
+  transform: translateY(-100%);
+  transition-duration: 160ms;
+  transition-timing-function: transform ease-out;
 }
 
-@-webkit-keyframes zent-notify-move-in {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes zent-notify-move-in {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes zent-notify-move-out {
-  0% {
-    opacity: 1;
-    max-height: 50px;
-  }
-  100% {
-    opacity: 0;
-    max-height: 0;
-    padding: 0;
-  }
-}
-@keyframes zent-notify-move-out {
-  0% {
-    opacity: 1;
-    max-height: 50px;
-  }
-  100% {
-    opacity: 0;
-    max-height: 0;
-    padding: 0;
-  }
-}
-@-webkit-keyframes zent-notify-content-move-out {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-@keyframes zent-notify-content-move-out {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
 .zent-number-input {
   width: 200px;
 }
@@ -6504,8 +6457,8 @@ ol {
   border-style: solid;
   border-radius: 2px;
   display: inline-block;
-  margin: 2px 0 2px 4px;
-  padding: 0 4px 0 18px;
+  margin: 2px 4px 2px 0;
+  padding: 0 18px 0 4px;
   line-height: 16px;
   font-size: 12px;
   position: relative;
