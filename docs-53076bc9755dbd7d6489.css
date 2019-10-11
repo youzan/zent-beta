@@ -2602,8 +2602,8 @@ ol {
 }
 
 .zent-checkbox-disabled > span {
-  color: #c8c9cc;
-  color: var(--theme-stroke-4, #c8c9cc);
+  color: #969799;
+  color: var(--theme-stroke-3, #969799);
 }
 .zent-checkbox-disabled > .zent-checkbox > .zent-checkbox-inner {
   background-color: #f7f8fa;
@@ -3754,26 +3754,26 @@ ol {
   border-bottom-color: var(--theme-stroke-3, #969799);
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom-width: 7.5px;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-bottom-width: 6px;
   border-bottom-style: solid;
   position: absolute;
-  top: 0;
-  left: 4px;
+  top: 2px;
+  left: 6px;
 }
 .zent-grid-thead .caret-down {
   border-top-color: #969799;
   border-top-color: var(--theme-stroke-3, #969799);
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top-width: 7.5px;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top-width: 6px;
   border-top-style: solid;
   position: absolute;
-  bottom: 0;
-  left: 4px;
+  bottom: 1px;
+  left: 6px;
 }
 .zent-grid-thead-sort {
   position: relative;
@@ -6330,8 +6330,8 @@ ol {
   background-color: var(--theme-stroke-5, #dcdee0);
 }
 .zent-radio-wrap.zent-radio-disabled .zent-radio + span {
-  color: #c8c9cc;
-  color: var(--theme-stroke-4, #c8c9cc);
+  color: #969799;
+  color: var(--theme-stroke-3, #969799);
 }
 
 .zent-radio-button {
@@ -8067,7 +8067,6 @@ ol {
   margin-bottom: -1px;
 }
 .zent-tabs-nav-type__normal .zent-tabs-tab {
-  min-width: 112px;
   padding: 0 16px;
 }
 .zent-tabs-nav-type__normal .zent-tabs-tab-inner {
@@ -8591,7 +8590,7 @@ ol {
 }
 
 .zent-upload.inline {
-  display: inline;
+  display: inline-block;
 }
 .zent-upload.zent-dialog-r {
   min-width: 760px !important;
@@ -8693,20 +8692,24 @@ ol {
 .zent-upload-local-attachment-region .zent-upload-content {
   margin-top: -10px;
   height: 100%;
+  line-height: 0;
 }
 .zent-upload-local-attachment-region .zent-upload-local-tips {
+  color: #969799;
+  color: var(--theme-stroke-3, #969799);
   clear: both;
-  padding-top: 20px;
+  padding-top: 12px;
   font-size: 12px;
+  line-height: 14px;
 }
 .zent-upload-local-attachment-region .zent-upload__upload-local-image-list {
   height: auto;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .zent-upload-local-attachment-region .zent-upload__upload-local-image-list .zent-upload-image-item {
   position: relative;
   float: left;
-  margin: 0 10px 10px 0;
+  margin-right: 10px;
   width: 80px;
   height: 80px;
 }
@@ -8890,30 +8893,30 @@ ol {
   color: var(--theme-stroke-2, #646566);
   border-color: #dcdee0;
   border-color: var(--theme-stroke-5, #dcdee0);
-  display: inline-block;
+  display: block;
   width: 80px;
   height: 80px;
   border-width: 1px;
   border-style: dashed;
-  line-height: 71px;
+  line-height: 80px;
   box-sizing: border-box;
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
   cursor: pointer;
   overflow: hidden;
   text-decoration: none;
 }
 
 .zent-upload-add-local-image-button {
-  margin: 0 20px 20px 0;
+  margin: 10px 20px 0 0;
 }
 
 .zent-upload-tips {
-  color: #646566;
-  color: var(--theme-stroke-2, #646566);
+  color: #969799;
+  color: var(--theme-stroke-3, #969799);
   line-height: 14px;
   font-size: 12px;
-  margin-top: 6px;
+  margin-top: 12px;
   margin-bottom: 0;
   position: absolute;
 }
