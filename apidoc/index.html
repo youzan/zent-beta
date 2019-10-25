@@ -64,89 +64,73 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#zent-utils" id="zent-utils" style="color: inherit; text-decoration: none;">
-					<h1>zent-utils</h1>
-				</a>
-				<p><a href="https://www.npmjs.com/package/zent-utils"><img src="https://img.shields.io/npm/v/zent-utils.svg?style=flat" alt="npm version"></a> <a href="https://www.npmjs.com/package/zent-utils"><img src="https://img.shields.io/npm/dt/zent-utils.svg" alt="downloads"></a></p>
-				<p>组件库的工具函数／工具组件</p>
-				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
-					<h2>API</h2>
-				</a>
-				<a href="#windoweventhandler" id="windoweventhandler" style="color: inherit; text-decoration: none;">
-					<h3>WindowEventHandler</h3>
-				</a>
-				<p>在<code>window</code>上绑定全局事件.</p>
-				<table>
-					<thead>
-						<tr>
-							<th>参数</th>
-							<th>说明</th>
-							<th>类型</th>
-							<th>默认值</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td>eventName</td>
-							<td>事件名字</td>
-							<td>string</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>callback</td>
-							<td>事件的回调函数</td>
-							<td>func</td>
-							<td><code>noop</code></td>
-						</tr>
-						<tr>
-							<td>useCapture</td>
-							<td>是否为capture事件</td>
-							<td>bool</td>
-							<td><code>false</code></td>
-						</tr>
-				</tbody></table>
-				<a href="#windowresizehandler" id="windowresizehandler" style="color: inherit; text-decoration: none;">
-					<h3>WindowResizeHandler</h3>
-				</a>
-				<p>监听全局的 <code>resize</code> 事件.</p>
-				<table>
-					<thead>
-						<tr>
-							<th>参数</th>
-							<th>说明</th>
-							<th>类型</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td>onResize</td>
-							<td>resize事件的回调函数</td>
-							<td>func</td>
-						</tr>
-				</tbody></table>
-				<a href="#dom-工具函数" id="dom-工具函数" style="color: inherit; text-decoration: none;">
-					<h3>DOM 工具函数</h3>
-				</a>
-				<a href="#findpositionedparent" id="findpositionedparent" style="color: inherit; text-decoration: none;">
-					<h4>findPositionedParent</h4>
-				</a>
-				<p><code>findPositionedParent(element: Node, inclusive: bool): Node</code></p>
-				<p>搜索DOM树中最近的一个有指定 <code>position</code> 属性的节点, <code>inclusive</code> 为true时, <code>element</code> 也会加入搜索路径中.</p>
-				<a href="#getviewportsize" id="getviewportsize" style="color: inherit; text-decoration: none;">
-					<h4>getViewportSize</h4>
-				</a>
-				<p><code>getViewportSize(): { width: number, height: number }</code></p>
-				<p>获取当前viewport的大小, viewport指浏览器的可视空间.</p>
-				<a href="#localstorage-helpers" id="localstorage-helpers" style="color: inherit; text-decoration: none;">
-					<h4>localStorage Helpers</h4>
+				<p>
+					<a href="https://github.com/youzan/">
+						<img alt="Youzan logo" width="36px" src="https://img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png" alt="youzan">
+					</a>
+				</p>
+				<p align="center">
+					<img alt="Zent logo" src="https://img.yzcdn.cn/public_files/2017/02/21/e96fcc2bb29150080fcf5da39cd27fbe.png">
+				</p>
+				<p align="center">
+					Zent <small><font color="grey">( &#92;ˈzent&#92; )</font></small>, a collection of essential UI components written with React.
+				</p>
+				<p align="center"><a href="./README-zh_CN.md">🇨🇳 访问中文版</a></p>
+				<p><a href="https://circleci.com/gh/youzan/zent"><img src="https://circleci.com/gh/youzan/zent.svg?style=svg" alt="CircleCI"></a> <a href="https://coveralls.io/github/youzan/zent?branch=master"><img src="https://img.shields.io/coveralls/youzan/zent/master.svg?style=flat" alt="Coverage Status"></a> <a href="https://www.npmjs.com/package/zent"><img src="https://img.shields.io/npm/v/zent.svg?style=flat" alt="npm version"></a> <a href="https://www.npmjs.com/package/zent"><img src="https://img.shields.io/npm/dt/zent.svg" alt="downloads"></a> <a href="packages/zent/docs/CONTRIBUTING_en-US.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a></p>
+				<p>Zent ( \ˈzent\ ) is a React component library developed and used at Youzan. Zent provides a collection of essential UI components and lots of useful domain specific components.</p>
+				<p>We have more than 50 components for now and we&#39;re releasing more.</p>
+				<p>Our goal is making React development faster and simpler.</p>
+				<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+					<h3>Features</h3>
 				</a>
 				<ul>
-					<li><code>read(namespace: string, key: string)</code></li>
-					<li><code>write(namespace: string, key: string, value: string)</code></li>
-					<li><code>remove(namespace: string, key: string)</code></li>
+					<li>High quality React components</li>
+					<li>Builtin TypeScript support</li>
+					<li>Supports custom themes</li>
+					<li>Import JavaScript and styles only if they are used</li>
+					<li>Handmade icon font</li>
 				</ul>
-				<a href="#smooth-scroll" id="smooth-scroll" style="color: inherit; text-decoration: none;">
-					<h4>Smooth scroll</h4>
+				<a href="#supported-environments" id="supported-environments" style="color: inherit; text-decoration: none;">
+					<h3>Supported Environments</h3>
 				</a>
-				<p><code>scroll(element: HTMLElement, x: number, y: number, duration?: number)</code></p>
+				<ul>
+					<li>React &gt;= 16.8</li>
+					<li>Modern browsers and IE &gt;= 11</li>
+					<li>Supports server-side rendering(SSR)</li>
+				</ul>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code class="language-shell">yarn add zent
+<span class="hljs-meta">
+#</span><span class="bash"> or</span>
+
+npm install zent --save</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation</h2>
+				</a>
+				<p><a href="https://youzan.github.io/zent/en/guides/install">https://youzan.github.io/zent/en/guides/install</a></p>
+				<a href="#contribution" id="contribution" style="color: inherit; text-decoration: none;">
+					<h2>Contribution</h2>
+				</a>
+				<p>Read our <a href="packages/zent/docs/CONTRIBUTING_en-US.md">contributing guide</a> to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Zent.</p>
+				<p>Send <a href="https://github.com/youzan/zent/issues">issues</a> and <a href="https://github.com/youzan/zent/pulls">pull requests</a> with your ideas.</p>
+				<a href="#contact-us" id="contact-us" style="color: inherit; text-decoration: none;">
+					<h2>Contact Us</h2>
+				</a>
+				<ul>
+					<li><p><a href="https://join.slack.com/t/zentjs/shared_invite/enQtMjcwNzM3NzE2OTMyLTc4MTg4MDkzZTVhNTQ5MmI4ZmVhOGQ2MzZhOTk2OGIyNmZjM2NhMzU3YjM4MzI3YTkxYWNjMDBhMzRiZTliNTE">Slack</a></p>
+					</li>
+					<li><p><a href="https://discord.gg/Nf6wVd2">Discord</a></p>
+					</li>
+					<li><p>Wechat(请备注 Zent)</p>
+						<img src="https://img.yzcdn.cn/public_files/2018/06/06/1fbe772102f91fae8eb3fa1767dd9b26.png" width="240px"/>
+					</li>
+				</ul>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>Project licensed under <a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a> license, feel free to enjoy and participate in Open Source.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
