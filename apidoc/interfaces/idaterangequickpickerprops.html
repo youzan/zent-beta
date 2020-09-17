@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>IDateRangeQuickPickerProps | zent</title>
-	<meta name="description" content="">
+	<meta name="description" content="Documentation for zent">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -82,12 +82,13 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#choosedays" class="tsd-kind-icon">choose<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#chosendays" class="tsd-kind-icon">chosen<wbr>Days</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#defaultselectedpresetindex" class="tsd-kind-icon">default<wbr>Selected<wbr>Preset<wbr>Index</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#format" class="tsd-kind-icon">format</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#max" class="tsd-kind-icon">max</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#min" class="tsd-kind-icon">min</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#onchange" class="tsd-kind-icon">on<wbr>Change</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#prefix" class="tsd-kind-icon">prefix</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#preset" class="tsd-kind-icon">preset</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#value" class="tsd-kind-icon">value</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="idaterangequickpickerprops.html#valuetype" class="tsd-kind-icon">value<wbr>Type</a></li>
@@ -101,10 +102,27 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="choosedays" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> choose<wbr>Days</h3>
-					<div class="tsd-signature tsd-kind-icon">choose<wbr>Days<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">choose<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../globals.html#daterangequickpickerpresetvalue" class="tsd-signature-type">DateRangeQuickPickerPresetValue</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L32">date-range-quick-picker/DateRangeQuickPicker.tsx:32</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L36">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>use chosenDays</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="chosendays" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> chosen<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">chosen<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../globals.html#daterangequickpickerpresetvalue" class="tsd-signature-type">DateRangeQuickPickerPresetValue</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L37">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +132,17 @@
 					<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L27">date-range-quick-picker/DateRangeQuickPicker.tsx:27</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L42">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:42</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="defaultselectedpresetindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Selected<wbr>Preset<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Selected<wbr>Preset<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L39">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,27 +152,27 @@
 					<div class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L31">date-range-quick-picker/DateRangeQuickPicker.tsx:31</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L32">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:32</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="max" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max</h3>
-					<div class="tsd-signature tsd-kind-icon">max<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
+					<div class="tsd-signature tsd-kind-icon">max<span class="tsd-signature-symbol">:</span> <a href="../globals.html#singledate" class="tsd-signature-type">SingleDate</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L35">date-range-quick-picker/DateRangeQuickPicker.tsx:35</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L41">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:41</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="min" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> min</h3>
-					<div class="tsd-signature tsd-kind-icon">min<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></div>
+					<div class="tsd-signature tsd-kind-icon">min<span class="tsd-signature-symbol">:</span> <a href="../globals.html#singledate" class="tsd-signature-type">SingleDate</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L34">date-range-quick-picker/DateRangeQuickPicker.tsx:34</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L40">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -154,17 +182,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="../globals.html#daterangequickpickerchangecallback" class="tsd-signature-type">DateRangeQuickPickerChangeCallback</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L28">date-range-quick-picker/DateRangeQuickPicker.tsx:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L26">date-range-quick-picker/DateRangeQuickPicker.tsx:26</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L29">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,27 +192,27 @@
 					<div class="tsd-signature tsd-kind-icon">preset<span class="tsd-signature-symbol">:</span> <a href="idaterangequickpickerpreset.html" class="tsd-signature-type">IDateRangeQuickPickerPreset</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L33">date-range-quick-picker/DateRangeQuickPicker.tsx:33</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L38">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:38</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="value" class="tsd-anchor"></a>
 					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <a href="../modules/datepickers.html#rangevalue" class="tsd-signature-type">RangeValue</a></div>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <a href="../globals.html#rangedate" class="tsd-signature-type">RangeDate</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L29">date-range-quick-picker/DateRangeQuickPicker.tsx:29</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L30">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:30</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="valuetype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">value<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"number"</span></div>
+					<div class="tsd-signature tsd-kind-icon">value<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../globals.html#daterangequickpickervaluetype" class="tsd-signature-type">DateRangeQuickPickerValueType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/111a6dcc/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L30">date-range-quick-picker/DateRangeQuickPicker.tsx:30</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx#L31">packages/zent/src/date-range-quick-picker/DateRangeQuickPicker.tsx:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +237,13 @@
 								<a href="idaterangequickpickerprops.html#choosedays" class="tsd-kind-icon">choose<wbr>Days</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="idaterangequickpickerprops.html#chosendays" class="tsd-kind-icon">chosen<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="idaterangequickpickerprops.html#classname" class="tsd-kind-icon">class<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="idaterangequickpickerprops.html#defaultselectedpresetindex" class="tsd-kind-icon">default<wbr>Selected<wbr>Preset<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="idaterangequickpickerprops.html#format" class="tsd-kind-icon">format</a>
@@ -232,9 +256,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="idaterangequickpickerprops.html#onchange" class="tsd-kind-icon">on<wbr>Change</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="idaterangequickpickerprops.html#prefix" class="tsd-kind-icon">prefix</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="idaterangequickpickerprops.html#preset" class="tsd-kind-icon">preset</a>
@@ -259,37 +280,10 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
@@ -298,18 +292,20 @@
 				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
@@ -319,6 +315,5 @@
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
