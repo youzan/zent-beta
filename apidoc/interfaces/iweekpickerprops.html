@@ -59,13 +59,21 @@
 					<a href="iweekpickerprops.html">IWeekPickerProps</a>
 				</li>
 			</ul>
-			<h1>Interface IWeekPickerProps</h1>
+			<h1>Interface IWeekPickerProps&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../globals.html#ivaluetype" class="tsd-signature-type">IValueType</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -73,7 +81,10 @@
 						<a href="iweekoption.html" class="tsd-signature-type">IWeekOption</a>
 					</li>
 					<li>
-						<a href="isinglesepcialprops.html" class="tsd-signature-type">ISingleSepcialProps</a>
+						<span class="tsd-signature-symbol">{}</span>
+					</li>
+					<li>
+						<a href="isinglespecialrelatedtype.html" class="tsd-signature-type">ISingleSpecialRelatedType</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">IWeekPickerProps</span>
@@ -89,8 +100,8 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iweekpickerprops.html#defaultdate" class="tsd-kind-icon">default<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iweekpickerprops.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iweekpickerprops.html#onchange" class="tsd-kind-icon">on<wbr>Change</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iweekpickerprops.html#valuetype" class="tsd-kind-icon">value<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="iweekpickerprops.html#weekstartson" class="tsd-kind-icon">week<wbr>Starts<wbr>On</a></li>
 							</ul>
 						</section>
@@ -100,24 +111,45 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="defaultdate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> default<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="../globals.html#singledate" class="tsd-signature-type">SingleDate</a><span class="tsd-signature-symbol">, </span><a href="../globals.html#singledate" class="tsd-signature-type">SingleDate</a><span class="tsd-signature-symbol">]</span></div>
+					<a name="onchange" class="tsd-anchor"></a>
+					<h3>on<wbr>Change</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IValueTypeSingleSpecialMap</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="isinglesepcialprops.html">ISingleSepcialProps</a>.<a href="isinglesepcialprops.html#defaultdate">defaultDate</a></p>
+						<p>Inherited from <a href="isinglespecialrelatedtype.html">ISingleSpecialRelatedType</a>.<a href="isinglespecialrelatedtype.html#onchange">onChange</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-picker/types.ts#L83">packages/zent/src/date-picker/types.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/c562b52/packages/zent/src/date-picker/types.ts#L46">packages/zent/src/date-picker/types.ts:46</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IValueTypeSingleSpecialMap</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>date: <span class="tsd-signature-type">IValueTypeSingleSpecialMap</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="../globals.html#singledate" class="tsd-signature-type">SingleDate</a><span class="tsd-signature-symbol">, </span><a href="../globals.html#singledate" class="tsd-signature-type">SingleDate</a><span class="tsd-signature-symbol">]</span></div>
+					<a name="valuetype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">value<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="isinglesepcialprops.html">ISingleSepcialProps</a>.<a href="isinglesepcialprops.html#value">value</a></p>
+						<p>Inherited from <a href="isinglespecialrelatedtype.html">ISingleSpecialRelatedType</a>.<a href="isinglespecialrelatedtype.html#valuetype">valueType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-picker/types.ts#L82">packages/zent/src/date-picker/types.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/c562b52/packages/zent/src/date-picker/types.ts#L45">packages/zent/src/date-picker/types.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +160,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="iweekoption.html">IWeekOption</a>.<a href="iweekoption.html#weekstartson">weekStartsOn</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/23f1e7ed2/packages/zent/src/date-picker/types.ts#L237">packages/zent/src/date-picker/types.ts:237</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/c562b52/packages/zent/src/date-picker/types.ts#L269">packages/zent/src/date-picker/types.ts:269</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,14 +178,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
 						<a href="iweekpickerprops.html" class="tsd-kind-icon">IWeek<wbr>Picker<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iweekpickerprops.html#defaultdate" class="tsd-kind-icon">default<wbr>Date</a>
+								<a href="iweekpickerprops.html#onchange" class="tsd-kind-icon">on<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="iweekpickerprops.html#value" class="tsd-kind-icon">value</a>
+								<a href="iweekpickerprops.html#valuetype" class="tsd-kind-icon">value<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="iweekpickerprops.html#weekstartson" class="tsd-kind-icon">week<wbr>Starts<wbr>On</a>
