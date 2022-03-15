@@ -171,6 +171,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#handleBodyScroll" class="tsd-kind-icon">handle<wbr>Body<wbr>Scroll</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#handleExpandRow" class="tsd-kind-icon">handle<wbr>Expand<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#handleSelect" class="tsd-kind-icon">handle<wbr>Select</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#isFixedLayout" class="tsd-kind-icon">is<wbr>Fixed<wbr>Layout</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#onChange" class="tsd-kind-icon">on<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#onPaginationChange" class="tsd-kind-icon">on<wbr>Pagination<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Grid.html#onResize" class="tsd-kind-icon">on<wbr>Resize</a></li>
@@ -203,7 +204,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent&lt;IGridProps&lt;Data, RowProps, Key&gt;, IGridState&gt;.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L169">packages/zent/src/grid/Grid.tsx:169</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L170">packages/zent/src/grid/Grid.tsx:170</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -237,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">body<wbr>Table<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L159">packages/zent/src/grid/Grid.tsx:159</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L160">packages/zent/src/grid/Grid.tsx:160</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +277,7 @@
 					<div class="tsd-signature tsd-kind-icon">foot<wbr>El<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L156">packages/zent/src/grid/Grid.tsx:156</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L157">packages/zent/src/grid/Grid.tsx:157</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -286,17 +287,17 @@
 					<div class="tsd-signature tsd-kind-icon">foot<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Footer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L155">packages/zent/src/grid/Grid.tsx:155</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L156">packages/zent/src/grid/Grid.tsx:156</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="getExpandBodyRender" class="tsd-anchor"></a>
 					<h3>get<wbr>Expand<wbr>Body<wbr>Render</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Expand<wbr>Body<wbr>Render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>expandRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Expand<wbr>Body<wbr>Render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>expandRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span>, expandation<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridExpandation.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridExpandation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L345">packages/zent/src/grid/Grid.tsx:345</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L346">packages/zent/src/grid/Grid.tsx:346</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -304,7 +305,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>expandRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>expandRowKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span>, expandation<span class="tsd-signature-symbol">: </span><a href="../interfaces/IGridExpandation.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridExpandation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -312,6 +313,9 @@
 										<ul class="tsd-parameters">
 											<li>
 												<h5>expandRowKeys: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5>expandation: <a href="../interfaces/IGridExpandation.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridExpandation</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -327,7 +331,7 @@
 					<div class="tsd-signature tsd-kind-icon">grid<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L154">packages/zent/src/grid/Grid.tsx:154</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L155">packages/zent/src/grid/Grid.tsx:155</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -337,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">handle<wbr>Batch<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;selectAll&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;removeAll&quot;</span>, datasets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L878">packages/zent/src/grid/Grid.tsx:878</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L899">packages/zent/src/grid/Grid.tsx:899</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -371,7 +375,7 @@
 					<div class="tsd-signature tsd-kind-icon">handle<wbr>Body<wbr>Scroll<wbr>Run<wbr>Once<wbr>Next<wbr>Frame<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">UIEvent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">ICancelable</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L571">packages/zent/src/grid/Grid.tsx:571</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L576">packages/zent/src/grid/Grid.tsx:576</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -381,7 +385,7 @@
 					<div class="tsd-signature tsd-kind-icon">header<wbr>El<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Element</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L157">packages/zent/src/grid/Grid.tsx:157</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L158">packages/zent/src/grid/Grid.tsx:158</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -391,7 +395,7 @@
 					<div class="tsd-signature tsd-kind-icon">header<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Header</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L158">packages/zent/src/grid/Grid.tsx:158</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L159">packages/zent/src/grid/Grid.tsx:159</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -401,7 +405,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Columns<wbr>Fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L288">packages/zent/src/grid/Grid.tsx:288</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L289">packages/zent/src/grid/Grid.tsx:289</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -426,7 +430,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Columns<wbr>Left<wbr>Fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L294">packages/zent/src/grid/Grid.tsx:294</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L295">packages/zent/src/grid/Grid.tsx:295</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -451,7 +455,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Columns<wbr>Right<wbr>Fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L302">packages/zent/src/grid/Grid.tsx:302</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L303">packages/zent/src/grid/Grid.tsx:303</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -476,7 +480,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Scroll<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L165">packages/zent/src/grid/Grid.tsx:165</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L166">packages/zent/src/grid/Grid.tsx:166</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -486,7 +490,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Scroll<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L166">packages/zent/src/grid/Grid.tsx:166</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L167">packages/zent/src/grid/Grid.tsx:167</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -496,7 +500,7 @@
 					<div class="tsd-signature tsd-kind-icon">left<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L160">packages/zent/src/grid/Grid.tsx:160</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L161">packages/zent/src/grid/Grid.tsx:161</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -506,7 +510,7 @@
 					<div class="tsd-signature tsd-kind-icon">mounted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L146">packages/zent/src/grid/Grid.tsx:146</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L147">packages/zent/src/grid/Grid.tsx:147</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -553,7 +557,7 @@
 					<div class="tsd-signature tsd-kind-icon">render<wbr>Selection<wbr>Checkbox<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L923">packages/zent/src/grid/Grid.tsx:923</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L944">packages/zent/src/grid/Grid.tsx:944</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -578,7 +582,7 @@
 					<div class="tsd-signature tsd-kind-icon">render<wbr>Selection<wbr>Radio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#IGridColumnBodyRenderFunc" class="tsd-signature-type" data-tsd-kind="Type alias">IGridColumnBodyRenderFunc</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L946">packages/zent/src/grid/Grid.tsx:946</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L967">packages/zent/src/grid/Grid.tsx:967</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -603,7 +607,7 @@
 					<div class="tsd-signature tsd-kind-icon">right<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L161">packages/zent/src/grid/Grid.tsx:161</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L162">packages/zent/src/grid/Grid.tsx:162</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -613,7 +617,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L162">packages/zent/src/grid/Grid.tsx:162</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L163">packages/zent/src/grid/Grid.tsx:163</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -623,7 +627,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L163">packages/zent/src/grid/Grid.tsx:163</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L164">packages/zent/src/grid/Grid.tsx:164</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -633,7 +637,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="../modules.html#GridScrollPosition" class="tsd-signature-type" data-tsd-kind="Type alias">GridScrollPosition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L164">packages/zent/src/grid/Grid.tsx:164</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L165">packages/zent/src/grid/Grid.tsx:165</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -643,7 +647,7 @@
 					<div class="tsd-signature tsd-kind-icon">selection<wbr>Props<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = {}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L147">packages/zent/src/grid/Grid.tsx:147</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L148">packages/zent/src/grid/Grid.tsx:148</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -680,7 +684,7 @@
 					<div class="tsd-signature tsd-kind-icon">sticky<wbr>Head<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L167">packages/zent/src/grid/Grid.tsx:167</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L168">packages/zent/src/grid/Grid.tsx:168</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -690,7 +694,7 @@
 					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L153">packages/zent/src/grid/Grid.tsx:153</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L154">packages/zent/src/grid/Grid.tsx:154</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -733,7 +737,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/IGridProps.html" class="tsd-signature-type" data-tsd-kind="Interface">IGridProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L126">packages/zent/src/grid/Grid.tsx:126</a></li>
+							<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L127">packages/zent/src/grid/Grid.tsx:127</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -921,7 +925,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentDidMount</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1078">packages/zent/src/grid/Grid.tsx:1078</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1099">packages/zent/src/grid/Grid.tsx:1099</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -939,7 +943,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentDidUpdate</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1149">packages/zent/src/grid/Grid.tsx:1149</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1170">packages/zent/src/grid/Grid.tsx:1170</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1000,7 +1004,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentWillReceiveProps</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1093">packages/zent/src/grid/Grid.tsx:1093</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1114">packages/zent/src/grid/Grid.tsx:1114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1024,7 +1028,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.componentWillUnmount</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1087">packages/zent/src/grid/Grid.tsx:1087</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1108">packages/zent/src/grid/Grid.tsx:1108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1090,7 +1094,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L560">packages/zent/src/grid/Grid.tsx:560</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L565">packages/zent/src/grid/Grid.tsx:565</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1155,7 +1159,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L486">packages/zent/src/grid/Grid.tsx:486</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L491">packages/zent/src/grid/Grid.tsx:491</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1178,7 +1182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L473">packages/zent/src/grid/Grid.tsx:473</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L478">packages/zent/src/grid/Grid.tsx:478</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -1195,7 +1199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L416">packages/zent/src/grid/Grid.tsx:416</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L421">packages/zent/src/grid/Grid.tsx:421</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1224,7 +1228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L283">packages/zent/src/grid/Grid.tsx:283</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L284">packages/zent/src/grid/Grid.tsx:284</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1250,7 +1254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L806">packages/zent/src/grid/Grid.tsx:806</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L811">packages/zent/src/grid/Grid.tsx:811</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1273,7 +1277,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L191">packages/zent/src/grid/Grid.tsx:191</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L192">packages/zent/src/grid/Grid.tsx:192</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1296,7 +1300,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L310">packages/zent/src/grid/Grid.tsx:310</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L311">packages/zent/src/grid/Grid.tsx:311</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1313,7 +1317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L504">packages/zent/src/grid/Grid.tsx:504</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L509">packages/zent/src/grid/Grid.tsx:509</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1330,7 +1334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L317">packages/zent/src/grid/Grid.tsx:317</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L318">packages/zent/src/grid/Grid.tsx:318</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1347,7 +1351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L512">packages/zent/src/grid/Grid.tsx:512</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L517">packages/zent/src/grid/Grid.tsx:517</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1364,7 +1368,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L359">packages/zent/src/grid/Grid.tsx:359</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L364">packages/zent/src/grid/Grid.tsx:364</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1390,7 +1394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L819">packages/zent/src/grid/Grid.tsx:819</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L824">packages/zent/src/grid/Grid.tsx:824</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1463,7 +1467,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1023">packages/zent/src/grid/Grid.tsx:1023</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1044">packages/zent/src/grid/Grid.tsx:1044</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -1480,7 +1484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L647">packages/zent/src/grid/Grid.tsx:647</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L652">packages/zent/src/grid/Grid.tsx:652</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1520,7 +1524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L629">packages/zent/src/grid/Grid.tsx:629</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L634">packages/zent/src/grid/Grid.tsx:634</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1543,7 +1547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L322">packages/zent/src/grid/Grid.tsx:322</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L323">packages/zent/src/grid/Grid.tsx:323</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1587,7 +1591,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L851">packages/zent/src/grid/Grid.tsx:851</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L872">packages/zent/src/grid/Grid.tsx:872</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1607,6 +1611,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isFixedLayout" class="tsd-anchor"></a>
+					<h3>is<wbr>Fixed<wbr>Layout</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Fixed<wbr>Layout<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L843">packages/zent/src/grid/Grid.tsx:843</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="onChange" class="tsd-anchor"></a>
 					<h3>on<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1616,7 +1637,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L269">packages/zent/src/grid/Grid.tsx:269</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L270">packages/zent/src/grid/Grid.tsx:270</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1639,7 +1660,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L275">packages/zent/src/grid/Grid.tsx:275</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L276">packages/zent/src/grid/Grid.tsx:276</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1665,7 +1686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L634">packages/zent/src/grid/Grid.tsx:634</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L639">packages/zent/src/grid/Grid.tsx:639</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1682,7 +1703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L641">packages/zent/src/grid/Grid.tsx:641</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L646">packages/zent/src/grid/Grid.tsx:646</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1705,7 +1726,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L999">packages/zent/src/grid/Grid.tsx:999</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1020">packages/zent/src/grid/Grid.tsx:1020</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1722,7 +1743,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L838">packages/zent/src/grid/Grid.tsx:838</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L859">packages/zent/src/grid/Grid.tsx:859</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1749,7 +1770,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides PureComponent.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1158">packages/zent/src/grid/Grid.tsx:1158</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1179">packages/zent/src/grid/Grid.tsx:1179</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -1766,7 +1787,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L520">packages/zent/src/grid/Grid.tsx:520</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L525">packages/zent/src/grid/Grid.tsx:525</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1789,7 +1810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L542">packages/zent/src/grid/Grid.tsx:542</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L547">packages/zent/src/grid/Grid.tsx:547</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1851,7 +1872,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L1065">packages/zent/src/grid/Grid.tsx:1065</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L1086">packages/zent/src/grid/Grid.tsx:1086</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1908,7 +1929,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L211">packages/zent/src/grid/Grid.tsx:211</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L212">packages/zent/src/grid/Grid.tsx:212</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1925,7 +1946,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/youzan/zent/blob/804399f/packages/zent/src/grid/Grid.tsx#L966">packages/zent/src/grid/Grid.tsx:966</a></li>
+									<li>Defined in <a href="https://github.com/youzan/zent/blob/7bd68bf/packages/zent/src/grid/Grid.tsx#L987">packages/zent/src/grid/Grid.tsx:987</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2134,6 +2155,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Grid.html#handleSelect" class="tsd-kind-icon">handle<wbr>Select</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Grid.html#isFixedLayout" class="tsd-kind-icon">is<wbr>Fixed<wbr>Layout</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Grid.html#onChange" class="tsd-kind-icon">on<wbr>Change</a>
